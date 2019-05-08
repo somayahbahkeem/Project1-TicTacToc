@@ -1,0 +1,112 @@
+ 
+   *{
+    block-size: border-box;
+  }
+  body {
+       display: flex;
+       font-family: 'Flavors', cursive;
+       height: 100%;
+       width: 100%;
+       overflow: hidden;
+       background:  url('https://source.unsplash.com/1600x900/?nature') no-repeat;
+     }
+ .contan {
+   margin: 0 auto;
+   width: 700px;
+ }
+ 
+ .gameContan {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 100px 100px 100px;
+   text-align: center;
+   font-size: 35px;
+   margin: 2px;
+ }
+ .gameContan > .gray {
+   background-color: gray;
+   padding: 24px;
+   font-size: 24px;
+ }
+
+ .gameContan > div {
+   border: 2px solid #c70887;
+   border-radius: 35px;
+   background-color: #e7e7e7;
+  width: 90%;
+  height: 90%;
+   color: black;
+   margin: 2px;
+   text-align:center;
+ }
+ 
+ .button {
+   background-color: #e7e7e7;
+    color: black;
+    border: 2px solid #c70887;
+    border-radius: 35px;
+   padding: 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   font-family: 'Flavors', cursive;
+   font-weight: bold;
+   margin:-10px;
+   margin-bottom:35px ;
+   cursor: pointer;
+ }
+
+ div div h1{
+   font-size: 50px;
+   font-weight: bold;
+   margin:20px 20px 0px;
+   text-align: center;
+   color: black;
+   font-family: Monoton;
+   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+   animation: neon1 1.5s ease-in-out infinite alternate;
+ }
+.button-container{
+   display:flex;
+   margin: 1em;
+   
+   justify-content:space-around;
+
+ }
+ @-webkit-keyframes neon1 {
+   from {
+     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+   }
+   to {
+     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+   }
+ }
+
+ .color{
+   color: #c70887;
+   font-weight: bold;
+   color: black;
+   font-family: Monoton;
+   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+   -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+   animation: neon1 1.5s ease-in-out infinite alternate;
+ }
+
+ @media only screen and (max-width: 850px) {
+   body{
+     width: 100%;
+   }
+
+   .contan{
+     width: 100%;
+   }
+    .gameContan  {
+   width: 60%;
+   
+   margin: 0 auto;
+   } 
+   
+
+ }
